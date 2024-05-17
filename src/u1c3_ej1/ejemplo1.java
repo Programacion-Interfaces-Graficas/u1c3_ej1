@@ -1,16 +1,8 @@
 package u1c3_ej1;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
-
-public class ejemplo2 {
-	
-
-	public ejemplo2() {
+import java.awt.event.*;
+import javax.swing.*;
+public class ejemplo1 {
+	public ejemplo1() {
 		//Crear un nuevo contenedor JFrame
 		JFrame ventana=new JFrame("Ejemplo 2");
 		//Asignar el tamaño inicial de la ventana
@@ -34,19 +26,19 @@ public class ejemplo2 {
 		//Añadir la etiqueta al panel de contenido
 		ventana.add(button);
 		//Mostrar la ventana
-		ventana.setVisible(true);
-		
+		ventana.setVisible(true);		
 	}
-
 	public static void main(String[] args) {
 		//Crea la ventana en el subproceso de entrega de eventos
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-				new ejemplo2();
-			}
-			
+				new ejemplo1();
+			}		
 		});
 
 	}
+	
+  
 
+	
 }
